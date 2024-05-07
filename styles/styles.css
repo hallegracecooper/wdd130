@@ -29,7 +29,7 @@ main img {
 }
 
 p {
-    padding: 0;
+    padding: 5px;
 }
 
 main {
@@ -58,8 +58,8 @@ footer {
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.3);
     padding: 1rem;
-    background-color: #999;
-    color: #eee;
+    background-color: #eee;
+    color: #000;
 }
 
 aside h2 {
