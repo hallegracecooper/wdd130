@@ -39,6 +39,7 @@ main {
 aside {
     width: 20rem;
     text-align: center;
+    position: relative;
 }
 
 aside img {
@@ -52,7 +53,7 @@ footer {
     text-align: center;
 }
 
-/* Class Selections */
+/*Class Selectors*/
 
 .box {
     margin: 1rem;
