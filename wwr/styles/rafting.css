@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poetsen+One&display=swap');
 
 :root {
-    --primary-color: #e03f50;  
-    --secondary-color: #8998a7; 
+    --primary-color: #e03f50;
+    --secondary-color: #8998a7;
     --accent1-color: #032640;
     --accent2-color: #f4f4f4;
 
     --heading-font: 'Poetsen One', sans-serif;
     --paragraph-font: 'DM Serif Display', serif;
 
-    --nav-background-color: #032640; 
-    --nav-link-color: #e03f50; 
+    --nav-background-color: #032640;
+    --nav-link-color: #e03f50;
     --nav-hover-link-color: #f4f4f4;
     --nav-hover-background-color: #8998a7;
 }
@@ -25,16 +25,29 @@ body {
 
 header, main, footer {
     max-width: 1200px;
-    width: 90%; 
+    width: 90%;
     margin: 0 auto;
     padding: 20px;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
     background-color: var(--nav-background-color);
+    padding: 10px 20px;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+header img {
+    grid-column: 1 / 2;
+    height: 50px; /* Adjust the logo size as needed */
+}
+
+nav {
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav a {
@@ -42,6 +55,9 @@ nav a {
     color: var(--nav-link-color);
     margin: 0 10px;
     font-family: var(--heading-font);
+    transition: background-color 0.3s, color 0.3s;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 nav a:hover {
@@ -89,51 +105,104 @@ nav a:hover {
     color: #000;
 }
 
-section {
+.history {
     display: flex;
     flex-direction: column;
     padding: 20px 0;
 }
 
-section h2 {
-    color: var(--secondary-color);
-    font-family: var(--heading-font);
-}
-
-section p {
-    line-height: 1.6;
-    font-family: var(--paragraph-font);
-}
-
-section img {
-    max-width: 50%;
-    margin-top: 15px;
-}
-
-footer {
-    background-color: var(--accent1-color);
-    color: var(--accent2-color);
-    text-align: center;
-    padding: 20px 0;
+.history-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     margin-top: 20px;
 }
 
-footer a {
-    text-decoration: none;
+.history-content img {
+    flex: 1 1 40%;
+    max-width: 40%;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.history-text {
+    flex: 1 1 55%;
+}
+
+.history h2 {
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+.history p {
+    line-height: 1.6;
+    font-family: var(--paragraph-font);
+    margin-bottom: 20px;
+}
+
+.adventures {
+    padding: 20px 0;
+}
+
+.adventures h2 {
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.adventure-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.adventure-grid figure {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.adventure-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.adventure-grid figcaption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: var(--nav-background-color);
     color: var(--accent2-color);
+    padding: 20px 0;
 }
 
-footer img {
-    vertical-align: middle;
-    margin: 0 10px;
-    width: 40px;
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-a img {
-    filter: invert(1);
-    transition: filter 0.3s ease;
+.footer-content p {
+    margin: 0;
 }
 
-a img:hover {
-    filter: invert(0.5);
+.social-media {
+    display: flex;
+    gap: 10px;
+}
+
+.social-media a img {
+    width: 24px;
+    height: 24px;
 }
