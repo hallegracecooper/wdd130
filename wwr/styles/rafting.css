@@ -212,6 +212,7 @@ footer {
     top: 100px;
     left: 30px;
     right: 30px;
+    display: flex;
     background-color: rgba(239, 241, 237, 0.8);
     padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -221,10 +222,8 @@ footer {
     float: right;
     margin-left: 20px;
     max-width: 300px;
-}
-
-.hero article p {
-    color: #000;
+    max-height: 300px;
+    margin: auto;
 }
 
 /* History section */
@@ -371,16 +370,13 @@ footer {
 }
 
 .hero p {
-    position: absolute;
-    top: 50%; /* Position paragraph in the middle of the image */
-    left: 50%; /* Position paragraph in the middle of the image */
-    transform: translate(-50%, -50%); /* Center paragraph relative to its own dimensions */
-    color: white; /* Set paragraph text color to white */
-    font-size: 1.5rem;
-    max-width: 80%; /* Limit paragraph width for better readability */
-    background-color: rgba(0, 0, 0, 0.5); /* Add semi-transparent background for better contrast */
-    padding: 1rem; /* Add padding for better readability */
-    border-radius: 5px; /* Add border radius for a softer appearance */
+    margin: auto;
+    color: white;
+    font-size: 15px;
+    margin-right: 15px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 1rem;
+    border-radius: 5px;
 }
 
 .newsletter {
