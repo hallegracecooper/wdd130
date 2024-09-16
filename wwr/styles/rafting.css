@@ -46,7 +46,7 @@ header {
 
 header img {
     grid-column: 1 / 2;
-    height: 50px; /* Adjust the logo size as needed */
+    height: 50px; /
 }
 
 nav {
@@ -298,11 +298,11 @@ footer {
     position: absolute;
     bottom: 10px;
     left: 10px;
-    color: white; /* Added for better readability */
+    color: white; 
     font-family: var(--heading-font);
-    background-color: rgba(0, 0, 0, 0.5); /* Added for better readability */
-    padding: 5px 10px; /* Added for better readability */
-    border-radius: 5px; /* Added for better readability */
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 5px 10px; 
+    border-radius: 5px; 
 }
 
 /* Trip section */
@@ -317,7 +317,7 @@ footer {
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 5px;
-    background: #f9f9f9; /* Resetting background color for trip description boxes */
+    background: #f9f9f9; 
 }
 
 .trip img {
@@ -328,7 +328,7 @@ footer {
 
 .trip-details {
     padding: 10px;
-    color: #333; /* Changing text color for trip descriptions */
+    color: #333; /
 }
 
 .trip-table {
@@ -356,7 +356,7 @@ footer {
 .hero {
     position: relative;
     text-align: center;
-    margin-top: 2rem; /* Adjusted margin for spacing */
+    margin-top: 2rem; 
 }
 
 .hero img {
@@ -440,24 +440,23 @@ footer {
 
 .grid-layout {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Adjusted grid layout to 2 columns */
-    gap: 2rem; /* Added gap between grid items */
-    margin: 2rem auto; /* Added margin for spacing */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 2rem; 
+    margin: 2rem auto; 
 }
 
 .grid-item {
-    border: 1px solid #ccc; /* Added border for grid items */
-    border-radius: 5px; /* Added border radius for grid items */
-    padding: 1rem; /* Added padding for grid items */
-}
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    padding: 1rem; 
 
 .grid-item img {
-    width: 100%; /* Ensure images fill the grid item */
+    width: 100%; 
     height: auto;
 }
 
 .grid-item h3 {
-    margin-top: 1rem; /* Added margin for spacing */
+    margin-top: 1rem; 
 }
 
 
